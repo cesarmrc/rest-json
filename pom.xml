@@ -62,11 +62,17 @@
         </dependency>
 
         <!-- JT 400 dependencies -->
-        <!-- <dependency>
+        <dependency>
             <groupId>org.apache.camel.quarkus</groupId>
             <artifactId>camel-quarkus-jt400</artifactId>
             <version>1.1.0</version>
-        </dependency> -->
+        </dependency>
+
+        <!-- Docker -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-container-image-docker</artifactId>
+        </dependency>
 
         <!-- test dependencies -->
         <dependency>

@@ -71,9 +71,9 @@ public class Routes extends RouteBuilder {
         //         .to("jt400://DEMO678:hola10@www.pub400.com/QSYS.LIB/LIBRARY.LIB/QUEUE.DTAQ")
         //         .log("test log");
         
-        // from("platform-http:/as402a?httpMethodRestrict=POST")
-        //         .to("jt400://DEMO678:hola10@www.pub400.com/DEMO6781/MYLIB.DTAQ")
-        //         .log("test log");
+        from("platform-http:/as402a?httpMethodRestrict=POST")
+                .to("jt400://DEMO678:hola10@www.pub400.com/DEMO6781/MYLIB.DTAQ")
+                .log("test log");
 
         // from("platform-http:/as404?httpMethodRestrict=POST")
         //         .to("direct:hello").log("NOP");

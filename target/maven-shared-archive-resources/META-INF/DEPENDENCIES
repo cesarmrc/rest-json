@@ -25,6 +25,8 @@ From: 'an unknown organization'
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
   - SmallRye: Common classes (http://smallrye.io/smallrye-config-common) io.smallrye.config:smallrye-config-common:jar:1.8.1
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - JT400 (http://jt400.sourceforge.net/) net.sf.jt400:jt400:jar:10.4
+    License: IBM Public License Version 1.0  (http://sourceforge.net/projects/jt400/files/JTOpen-full/10.4/license_10_4.html)
   - Graal Sdk (https://github.com/oracle/graal) org.graalvm.sdk:graal-sdk:jar:20.1.0
     License: Universal Permissive License, Version 1.0  (http://opensource.org/licenses/UPL)
   - reactive-streams (http://www.reactive-streams.org/) org.reactivestreams:reactive-streams:jar:1.0.3
@@ -99,6 +101,8 @@ From: 'JBoss by Red Hat' (http://www.jboss.org)
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
   - Quarkus - Bootstrap - Runner (http://www.jboss.org/quarkus-bootstrap-parent/quarkus-bootstrap-runner) io.quarkus:quarkus-bootstrap-runner:jar:1.6.0.Final
     License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.html)
+  - Quarkus - Container - Image - Docker (http://www.jboss.org/quarkus-parent/quarkus-build-parent/quarkus-container-image-parent/quarkus-container-image-docker-parent/quarkus-container-image-docker) io.quarkus:quarkus-container-image-docker:jar:1.6.0.Final
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
   - Quarkus - Core - Runtime (http://www.jboss.org/quarkus-parent/quarkus-build-parent/quarkus-core-parent/quarkus-core) io.quarkus:quarkus-core:jar:1.6.0.Final
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
   - Quarkus - Development mode - SPI (http://www.jboss.org/quarkus-parent/quarkus-build-parent/quarkus-development-mode-spi) io.quarkus:quarkus-development-mode-spi:jar:1.6.0.Final
@@ -185,6 +189,8 @@ From: 'The Apache Software Foundation' (https://www.apache.org/)
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
   - Camel :: Jackson (https://www.apache.org/camel/camel-parent/components/camel-jackson/) org.apache.camel:camel-jackson:jar:3.4.0
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Camel :: Java Toolbox for AS/400 (https://www.apache.org/camel/camel-parent/components/camel-jt400/) org.apache.camel:camel-jt400:jar:3.5.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
   - Camel :: Main (https://www.apache.org/camel/camel-parent/core/camel-main/) org.apache.camel:camel-main:jar:3.4.0
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
   - Camel :: Management API (https://www.apache.org/camel/camel-parent/core/camel-management-api/) org.apache.camel:camel-management-api:jar:3.4.0
@@ -207,6 +213,8 @@ From: 'The Apache Software Foundation' (https://www.apache.org/)
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
   - Camel Quarkus :: Jackson :: Runtime (http://camel.apache.org/camel-quarkus-poms/camel-quarkus-build-parent/camel-quarkus-jackson-parent/camel-quarkus-jackson) org.apache.camel.quarkus:camel-quarkus-jackson:jar:1.0.0-CR3
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Camel Quarkus :: JT400 :: Runtime (http://camel.apache.org/camel-quarkus-poms/camel-quarkus-build-parent/camel-quarkus-jt400-parent/camel-quarkus-jt400) org.apache.camel.quarkus:camel-quarkus-jt400:jar:1.1.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
   - Camel Quarkus :: Main :: Runtime (http://camel.apache.org/camel-quarkus-poms/camel-quarkus-build-parent/camel-quarkus-main-parent/camel-quarkus-main) org.apache.camel.quarkus:camel-quarkus-main:jar:1.0.0-CR3
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
   - Camel Quarkus :: Platform HTTP :: Runtime (http://camel.apache.org/camel-quarkus-poms/camel-quarkus-build-parent/camel-quarkus-platform-http-parent/camel-quarkus-platform-http) org.apache.camel.quarkus:camel-quarkus-platform-http:jar:1.0.0-CR3
@@ -214,6 +222,8 @@ From: 'The Apache Software Foundation' (https://www.apache.org/)
   - Camel Quarkus :: Support :: Common :: Runtime (http://camel.apache.org/camel-quarkus-poms/camel-quarkus-build-parent/camel-quarkus-support-common-parent/camel-quarkus-support-common) org.apache.camel.quarkus:camel-quarkus-support-common:jar:1.0.0-CR3
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
   - Camel Quarkus :: Support :: XML :: Runtime (http://camel.apache.org/camel-quarkus-poms/camel-quarkus-build-parent/camel-quarkus-support-xml-parent/camel-quarkus-support-xml) org.apache.camel.quarkus:camel-quarkus-support-xml:jar:1.0.0-CR3
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Lang (http://commons.apache.org/proper/commons-lang/) org.apache.commons:commons-lang3:jar:3.9
     License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
 
 From: 'The Netty Project' (https://netty.io/)
