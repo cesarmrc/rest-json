@@ -61,6 +61,13 @@
             <artifactId>camel-quarkus-direct</artifactId>
         </dependency>
 
+        <!-- Acctive MQ-->
+        <dependency>
+            <groupId>org.apache.camel.quarkus</groupId>
+            <artifactId>camel-quarkus-activemq</artifactId>
+            <version>1.0.0-CR3</version>
+        </dependency>
+
         <!-- JT 400 dependencies -->
         <dependency>
             <groupId>org.apache.camel.quarkus</groupId>

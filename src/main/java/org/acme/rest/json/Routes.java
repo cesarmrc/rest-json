@@ -64,38 +64,27 @@ public class Routes extends RouteBuilder {
                 .setBody().constant(legumes)
                 .marshal().json();
         
-        // from("platform-http:/as400?httpMethodRestrict=GET")
-        //         .to("jt400://DEMO678:hola10@www.pub400.com/lib.lib/MSGINDQ.DTAQ?keyed=true");
+        // LOCAL TEST
+        from("platform-http:/sendDataToQueue?httpMethodRestrict=POST")
+            .convertBodyTo(String.class)
+            .to("jt400://DEMO678:hola10@www.pub400.com/QSYS.LIB/DEMO6781.LIB/INPUTQ.DTAQ")
+            .to("jt400://DEMO678:hola10@www.pub400.com/QSYS.LIB/DEMO6781.LIB/OUTPUTQ.DTAQ")
+            .log("Message send to AS400 DATA QUEUE: ${body}");
+
+        from("jt400://DEMO678:hola10@www.pub400.com/QSYS.LIB/DEMO6781.LIB/OUTPUTQ.DTAQ")
+            .log("Message read from AS400 DATA QUEUE - OUTPUTQ: ${body}");
         
-        // from("platform-http:/as402?httpMethodRestrict=POST")
-        //         .to("jt400://DEMO678:hola10@www.pub400.com/QSYS.LIB/LIBRARY.LIB/QUEUE.DTAQ")
-        //         .log("test log");
-        
-        from("platform-http:/as402a?httpMethodRestrict=POST")
-                .to("jt400://DEMO678:hola10@www.pub400.com/DEMO6781/MYLIB.DTAQ")
-                .log("test log");
+        // from("jt400://DEMO678:hola10@www.pub400.com/QSYS.LIB/DEMO6781.LIB/INPUTQ.DTAQ")
+        //     .log("Message read from AS400 DATA QUEUE - INPUTQ: ${body}");
 
-        // from("platform-http:/as404?httpMethodRestrict=POST")
-        //         .to("direct:hello").log("NOP");
+        //ACTIVE MQ
+        // from("activemq:queue:cesarq")
+        //     .convertBodyTo(String.class)
+        //     .log("Received a message before - ${body}")
+        //     .to("jt400://DEMO678:hola10@www.pub400.com/QSYS.LIB/DEMO6781.LIB/CESARQ.DTAQ");
 
-        // from("direct:hello")
-        //         .transform().constant("Hello World").log("asd");
-        
-        // from("direct:test")
-        //         .transform().constant("TEST!!").log("TEST");
-        // from("jt400://DEMO678:hola10@www.pub400.com/QSYS.LIB/BEATLES.LIB/PENNYLANE.DTAQ").to("mock:ringo");
-
-        // from("direct:test1").to("jt400://DEMO678:hola10@www.pub400.com/QSYS.LIB/BEATLES.LIB/PENNYLANE.DTAQ");
-        // from("jt400://DEMO678:hola10@www.pub400.com/QSYS.LIB/BEATLES.LIB/PENNYLANE.DTAQ").to("direct:hello");
-
-        // from("direct:work")
-        //         .to("jt400://DEMO678:hola10@www.pub400.com/QSYS.LIB/assets.LIB/compute.PGM?fieldsLength=10,10&ouputFieldsIdx=2,3")
-        //         .to("direct:hello");
-        
-        // from("jt400://DEMO678:hola10@www.pub400.com/lib.lib/MSGOUTDQ.DTAQ?keyed=true&searchKey=MYKEY&searchType=GE")
-        //         .to("direct:hello");
-
-
-        // QRPGLESC
+        // from("jt400://DEMO678:hola10@www.pub400.com/QSYS.LIB/DEMO6781.LIB/CESARQ.DTAQ")
+        //     .log("Message read from AS400 - ${body}")
+        //     .to("activemq:queue:cesarq1");
     }
 }
